@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[hmargin=1.15in,vmargin=0in]{geometry}
+\usepackage{tabularray, multicol, multirow}
+\SetTblrInner{rowsep=3pt,colsep=8pt}
+\usepackage{sansmathfonts}
+% \usepackage{ninecolors}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\renewcommand*\familydefault{\sfdefault}
+
+% \definecolor{lightb}{RGB}{217,224,250}
+\definecolor{lightgray}{gray}{0.85}
+
+
+\title{Group Meeting Schedule\\CC-ATS Research}
+\date{Fall 2024}
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[!h]
+    \caption{\textcolor{Emerald}{CW: I propose we do a literature review every other week}} 
+    \vspace{2mm}
+    \begin{tblr}{
+        hline{1,Z} = {1pt}, rows = {7mm},
+        cell{odd}{2} = {lightgray},
+        % cell{odd}{3} = {lightgray}, 
+        cell{odd}{4} = {lightgray},
+        cell{1}{1-4} = {white},
+        column{1} = {1.4cm,l}, column{2-4} = {4cm,c}
+    }
+        Date & {\SetCell[c=2]{} Research Updates}& & Literature Review \\ 
+        \hline
+        09/16   & {\SetCell[c=2]{} Carly Wickizer (ADLumin)}    & & Richard (I-PpoI)   \\ 
+        09/23   & {\SetCell[c=2]{} Dr. Zheng Pei (Vib. Polariton)}      & & Samitha (PETase)   \\ 
+        09/30   & {\SetCell[c=3]{c} --- Guest Talk --- \\ QM/MM: PySCF-GPU } \\
+        10/07   & {\SetCell[c=3]{} Richard (Practice Seminar)} \\ 
+        10/14   & {\SetCell[c=2]{} no updates } & & Chance --- OSLO  \\ 
+        10/21   & {\SetCell[c=3]{} --- ACS SWRM --- \\ Waco, TX, 10/20-10/23} \\ 
+        10/28   & {\SetCell[c=3]{} --- Guest Talk --- \\  Dr. Hadi Afshari (Furis lab)}   \\
+        11/04   & {\SetCell[c=3]{} Samitha (Preliminary Practice)} \\ 
+        11/11   &  &  &   \\ 
+        11/18   &  &  &   \\ 
+        11/25   &  &  &   \\ 
+        12/02   &  &  &   \\ 
+        12/09   &  &  &   \\ 
+        12/16   &  &  &   \\ 
+    \end{tblr}
+\end{table}
+
+% \begin{table}[!h]
+%     \caption{\textcolor{Emerald}{CW: I propose we do a literature review every other week}} \vspace{2mm}
+%     \begin{tblr}{
+%         hline{1,Z} = {1pt}, rows = {7mm},
+%         cell{odd}{4} = {lightgray},
+%         cell{even}{3} = {lightgray}, 
+%         cell{1}{1-4} = {white},
+%         column{1} = {1.4cm,l}, column{2-4} = {4cm,c}
+%     }
+%         Date & Research Update  & Research Update  & Literature Review \\ 
+%         \hline
+%         9/16 & Carly Wickizer - ADLumin &  & Richard - IPPOI   \\ 
+%         9/23 & Zheng - Vib. Polariton &  & Samitha - PETase   \\ 
+%         9/30 & ---  & Guest Presentation (PySCF-GPU) & ---    \\ 
+%         10/7 & \SetCell{Richard - Practice Seminar} \\ 
+%         10/14 &  &  & Chance - OSLO  \\ 
+%         10/21 & ACS & SWRM & (10/20-10/23) \\ 
+%         10/28 &  &  & Samitha - Prelim  \\ 
+%         11/4 &  &  &   \\ 
+%         11/11 &  &  &   \\ 
+%         11/18 &  &  &   \\ 
+%         11/25 &  &  &   \\ 
+%         12/2 &  &  &   \\ 
+%         12/9 &  &  &   \\ 
+%         12/16 &  &  &   \\ 
+%     \end{tblr}
+% \end{table}
+
+\end{document}
